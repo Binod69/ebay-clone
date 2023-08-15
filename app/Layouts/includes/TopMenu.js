@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { BsChevronDown } from 'react-icons/bs';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
-import nepal from '../../../public/images/nepal.png';
+import nepal from '../../../public/images/nepal.webp';
 
 const TopMenu = () => {
   return (
