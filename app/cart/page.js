@@ -18,6 +18,29 @@ const page = () => {
           <div className="w-[65%]">
             <CartItems key={product.id} product={product} />
           </div>
+          <div
+            id="GoToCheckout"
+            className="md:w-[33%] absolute top-4 right-0 m-2"
+          >
+            <div className="bg-white p-4 border">
+              <button className="flex items-center justify-center bg-blue-600 w-full text-white font-semibold p-3 rounded-full mt-4">
+                Go to checkout
+              </button>
+              <div className="flex items-center justify-between mt-4 text-sm mb-1">
+                <div className="">Items: (3)</div>
+                <div>रु‎12.99</div>
+              </div>
+              <div className="flex items-center justify-between mb-4 text-sm ">
+                <div className="">Shipping:</div>
+                <div>Free</div>
+              </div>
+              <div className="border-b border-gray-300" />
+              <div className="flex items-center justify-between mt-4 mb-1 text-lg font-semibold">
+                <div>Subtotal</div>
+                <div>रु‎12.99</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <SimilarProducts />
