@@ -1,5 +1,6 @@
 import MainLayout from '@/app/Layouts/MainLayout';
 import Image from 'next/image';
+import SimilarProducts from '@/app/Components/SimilarProducts/SimilarProducts';
 import nepal from '../../../public/images/nepal.webp';
 const ProductDetails = ({ params }) => {
   const product = {
@@ -60,6 +61,7 @@ const ProductDetails = ({ params }) => {
             </div>
           </div>
         </div>
+        <SimilarProducts />
       </MainLayout>
     </>
   );
