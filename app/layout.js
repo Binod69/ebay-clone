@@ -1,7 +1,8 @@
+import './globals.css';
+import UserProvider from './context/user';
+import { Inter } from 'next/font/google';
 import MainLayout from './Layouts/MainLayout';
 import Footer from './Layouts/includes/Footer';
-import './globals.css';
-import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,7 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <MainLayout />
-        <main>{children}</main>
+        <main>
+          <UserProvider>{children}</UserProvider>
+        </main>
         <Footer />
       </body>
     </html>

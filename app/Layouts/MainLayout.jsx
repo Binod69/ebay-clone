@@ -1,6 +1,4 @@
 'use client';
-
-import Footer from './includes/Footer';
 import MainHeader from './includes/MainHeader';
 import SubMenu from './includes/SubMenu';
 import TopMenu from './includes/TopMenu';
